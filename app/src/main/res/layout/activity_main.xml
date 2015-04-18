@@ -26,7 +26,8 @@
 			android:hint="Phone Number"
 			app:baseColor="@color/primary_text"
 			app:primaryColor="@color/accent"
-			android:layout_centerHorizontal="true"/>
+			android:layout_centerHorizontal="true"
+			android:inputType="phone"/>
 
 		<com.rengwuxian.materialedittext.MaterialEditText
 			android:layout_width="fill_parent"
@@ -36,6 +37,39 @@
 			android:hint="Message"
 			app:baseColor="@color/primary_text"
 			app:primaryColor="@color/accent"
-			android:layout_centerHorizontal="true"/>
+			android:layout_centerHorizontal="true"
+			android:inputType="textMultiLine"/>
+
+		<com.rengwuxian.materialedittext.MaterialEditText
+			android:layout_width="150dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/repeat"
+			android:layout_below="@id/message_text"
+			app:baseColor="@color/primary_text"
+			app:primaryColor="@color/accent"
+			android:layout_centerHorizontal="true"
+			android:inputType="number"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Repeat:"
+			android:id="@+id/textView"
+			android:textColor="@color/primary_text"
+			android:textSize="20dp"
+			android:layout_alignBottom="@+id/repeat"
+			android:layout_toLeftOf="@+id/repeat"
+			android:layout_marginRight="8dp"
+			android:layout_marginBottom="8dp"
+			android:layout_toStartOf="@+id/repeat"/>
+
+		<com.gc.materialdesign.views.ButtonFlat
+			android:id="@+id/send_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@color/accent"
+			android:layout_below="@id/repeat"
+			android:layout_centerHorizontal="true"
+			android:text="Send" />
 	</RelativeLayout>
 </RelativeLayout>
