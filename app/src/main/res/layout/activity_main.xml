@@ -54,7 +54,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:text="Repeat:"
-			android:id="@+id/textView"
+			android:id="@+id/repat_text"
 			android:textColor="@color/primary_text"
 			android:textSize="20dp"
 			android:layout_alignBottom="@+id/repeat"
@@ -63,13 +63,18 @@
 			android:layout_marginBottom="8dp"
 			android:layout_toStartOf="@+id/repeat"/>
 
-		<com.gc.materialdesign.views.ButtonFlat
-			android:id="@+id/send_button"
+		<Button
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:background="@color/accent"
-			android:layout_below="@id/repeat"
+			android:text="Send"
+			android:id="@+id/send_button"
 			android:layout_centerHorizontal="true"
-			android:text="Send" />
+			android:layout_marginTop="20dp"
+			android:layout_below="@id/repeat"
+			android:textColor="@color/primary_text"
+			android:background="@drawable/button"
+			android:theme="@style/Base.TextAppearance.AppCompat.Button"
+			android:textAllCaps="true"
+			android:fontFamily="sans-serif-medium"/>
 	</RelativeLayout>
 </RelativeLayout>

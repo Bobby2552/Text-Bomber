@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.gc.materialdesign.views.ButtonFlat;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -25,7 +27,7 @@ public class MainActivity extends ActionBarActivity {
 		setContentView(R.layout.activity_main);
 
 		phoneNumber = (EditText) findViewById(R.id.phone_number);
-		message = (EditText) findViewById(R.id.message);
+		message = (EditText) findViewById(R.id.message_text);
 		repeat = (EditText) findViewById(R.id.repeat);
 		send = (Button) findViewById(R.id.send_button);
 		toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -34,9 +36,9 @@ public class MainActivity extends ActionBarActivity {
 		send.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				String num = phoneNumber.getText().toString();
-				String mssg = message.getText().toString();
-				int rept = Integer.parseInt(repeat.getText().toString());
+					String num = phoneNumber.getText().toString();
+					String mssg = message.getText().toString();
+					int rept = Integer.parseInt(repeat.getText().toString());
 
 				if ((num == null || num.equals("")) || (mssg == null || mssg.equals(""))) {
 					Toast.makeText(getApplicationContext(), "Make sure all fields are filled",
