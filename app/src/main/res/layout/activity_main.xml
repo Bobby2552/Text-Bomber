@@ -20,14 +20,31 @@
 		android:layout_below="@id/toolbar">
 
 		<com.rengwuxian.materialedittext.MaterialEditText
-			android:layout_width="fill_parent"
+			android:layout_width="100dp"
 			android:layout_height="wrap_content"
 			android:id="@+id/phone_number"
 			android:hint="Phone Number"
 			app:baseColor="@color/primary_text"
 			app:primaryColor="@color/accent"
-			android:layout_centerHorizontal="true"
-			android:inputType="phone"/>
+			android:inputType="phone"
+			android:layout_toLeftOf="@+id/contacts"
+			android:paddingRight="16dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true" />
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Contact"
+			android:id="@+id/contacts"
+			android:textColor="@color/primary_text"
+			android:background="@drawable/button"
+			android:theme="@style/Base.TextAppearance.AppCompat.Button"
+			android:textAllCaps="true"
+			android:fontFamily="sans-serif-medium"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentEnd="true" />
 
 		<com.rengwuxian.materialedittext.MaterialEditText
 			android:layout_width="fill_parent"
@@ -41,27 +58,28 @@
 			android:inputType="textMultiLine"/>
 
 		<com.rengwuxian.materialedittext.MaterialEditText
-			android:layout_width="150dp"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:id="@+id/repeat"
+			android:hint="Repeat"
 			android:layout_below="@id/message_text"
 			app:baseColor="@color/primary_text"
 			app:primaryColor="@color/accent"
 			android:layout_centerHorizontal="true"
 			android:inputType="number"/>
 
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Repeat:"
-			android:id="@+id/repat_text"
-			android:textColor="@color/primary_text"
-			android:textSize="20dp"
-			android:layout_alignBottom="@+id/repeat"
-			android:layout_toLeftOf="@+id/repeat"
-			android:layout_marginRight="8dp"
-			android:layout_marginBottom="8dp"
-			android:layout_toStartOf="@+id/repeat"/>
+		<!--<TextView-->
+		<!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:text="Repeat:"-->
+		<!--android:id="@+id/repat_text"-->
+		<!--android:textColor="@color/primary_text"-->
+		<!--android:textSize="20dp"-->
+		<!--android:layout_alignBottom="@+id/repeat"-->
+		<!--android:layout_toLeftOf="@+id/repeat"-->
+		<!--android:layout_marginRight="8dp"-->
+		<!--android:layout_marginBottom="8dp"-->
+		<!--android:layout_toStartOf="@+id/repeat"/>-->
 
 		<Button
 			android:layout_width="wrap_content"
@@ -76,5 +94,6 @@
 			android:theme="@style/Base.TextAppearance.AppCompat.Button"
 			android:textAllCaps="true"
 			android:fontFamily="sans-serif-medium"/>
+
 	</RelativeLayout>
 </RelativeLayout>
